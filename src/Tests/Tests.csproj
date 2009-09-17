@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{C1E83206-1968-4738-B58E-0F28B7BCDD44}</ProjectGuid>
+    <ProjectGuid>{9B74C1B6-1740-4FA9-BF13-77D73748C29A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MvcSiteMap.Core</RootNamespace>
-    <AssemblyName>MvcSiteMap.Core</AssemblyName>
+    <RootNamespace>Tests</RootNamespace>
+    <AssemblyName>Tests</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,9 +31,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+    <Reference Include="Moq, Version=3.1.416.3, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\lib\json.net\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\lib\moq\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.5.2.9222, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\nunit\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -49,17 +53,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ISiteMapReader.cs" />
-    <Compile Include="ISiteMapService.cs" />
-    <Compile Include="JsonSiteMapReader.cs" />
-    <Compile Include="SiteMapNode.cs" />
-    <Compile Include="SiteMapService.cs" />
-    <Compile Include="MenuHelper.cs" />
+    <Compile Include="IntegrationTests\JsonSiteMapReaderTests.cs" />
+    <Compile Include="UnitTests\JsonSiteMapReaderTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTests\SiteMapNodeTests.cs" />
+    <Compile Include="UnitTests\SiteMapServiceTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\sitemap.json">
-      <Link>sitemap.json</Link>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{C1E83206-1968-4738-B58E-0F28B7BCDD44}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sitemap.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

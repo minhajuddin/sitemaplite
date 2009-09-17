@@ -2,26 +2,29 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace JsonSiteMap {
-    public class JsonNode {
+namespace MvcSiteMap.Core {
+    public class SiteMapNode {
+
         public virtual int Id { get; set; }
         public virtual string Action { get; set; }
         public virtual string Controller { get; set; }
         public virtual string Title { get; set; }
         public virtual string Role { get; set; }
-        public int ParentId;
+        public int ParentId { get; set; }
 
-        public IEnumerable<JsonNode> Children;
+        public IEnumerable<SiteMapNode> Children;
 
+        public virtual bool IsInRole(string role) {
+            if (Role == null || Role.Trim().Length == 0) {
+                return true;
+            }
 
-        public override string ToString() {
-            //return string.Format("Id = {0}, Action={1}, Controller={2}, Title={3}, ParentId={4}", Id, Action, Controller, Title, ParentId);
-            return string.Format("{0}({1}/{2}) - [{3}]", Title, Controller, Action, Role);
-        }
-
-        public bool IsInRole(string role) {
             int count = Role.Split(',').Count(x => x.Trim().Equals(role, StringComparison.OrdinalIgnoreCase));
             return count != 0;
+        }
+
+        public virtual bool IsRootNode {
+            get { return ParentId == 0; }
         }
     }
 }
