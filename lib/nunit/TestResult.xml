@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="../../src/Tests/bin/Debug/Tests.dll" total="19" errors="0" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2009-09-18" time="20:33:16">
+  <environment nunit-version="2.5.2.9222" clr-version="2.0.50727.3082" os-version="Microsoft Windows NT 5.1.2600 Service Pack 3" platform="Win32NT" cwd="d:\_repositories\minhajuddin\core_repos\sitemaplite\lib\nunit" machine-name="CV-003" user="Minhajuddin" user-domain="CV-003" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite name="../../src/Tests/bin/Debug/Tests.dll" executed="True" success="False" time="7.270" asserts="0">
+    <results>
+      <test-suite name="Tests" executed="True" success="False" time="7.210" asserts="0">
+        <results>
+          <test-suite name="IntegrationTests" executed="True" success="True" time="2.363" asserts="0">
+            <results>
+              <test-suite name="JsonSiteMapReaderTests" executed="True" success="True" time="2.363" asserts="0">
+                <results>
+                  <test-case name="Tests.IntegrationTests.JsonSiteMapReaderTests.SiteMapReader_CanReadNodesFromACustomJsonFile" executed="True" success="True" time="1.843" asserts="2" />
+                  <test-case name="Tests.IntegrationTests.JsonSiteMapReaderTests.SiteMapReader_CanReadNodesFromTheDefaultFileIfItIsPresent" executed="True" success="True" time="0.010" asserts="2" />
+                  <test-case name="Tests.IntegrationTests.JsonSiteMapReaderTests.SiteMapReader_ThrowsAnExceptionIfTheInputFileDoesNotExist" executed="True" success="True" time="0.371" asserts="0" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+          <test-suite name="UnitTests" executed="True" success="False" time="4.817" asserts="0">
+            <results>
+              <test-suite name="HtmlHelperExtensionTests" executed="True" success="False" time="3.585" asserts="0">
+                <results>
+                  <test-case name="Tests.UnitTests.HtmlHelperExtensionTests.RenderMainNav_RendersTheRootNodes" executed="True" success="False" time="3.585" asserts="1">
+                    <failure>
+                      <message><![CDATA[  Expected string length 0 but was 3. Strings differ at index 0.
+  Expected: <string.Empty>
+  But was:  "   "
+  -----------^
+]]></message>
+                      <stack-trace><![CDATA[at Tests.UnitTests.HtmlHelperExtensionTests.RenderMainNav_RendersTheRootNodes() in D:\_repositories\minhajuddin\core_repos\sitemaplite\src\Tests\UnitTests\HtmlHelperExtensionTests.cs:line 13
+]]></stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite name="JsonSiteMapReaderTests" executed="True" success="True" time="0.020" asserts="0">
+                <results>
+                  <test-case name="Tests.UnitTests.JsonSiteMapReaderTests.GetAllNodes_ParsesTheNodeFileAsExpected" executed="True" success="True" time="0.000" asserts="6" />
+                  <test-case name="Tests.UnitTests.JsonSiteMapReaderTests.GetAllNodes_ReturnsAnEmptyList_WhenFileDoesntHaveAnyNodes" executed="True" success="True" time="0.010" asserts="3" />
+                  <test-case name="Tests.UnitTests.JsonSiteMapReaderTests.GetAllNodes_ReturnsAnIEnumerableOfSiteMapNodesWithMoreThanOneNode" executed="True" success="True" time="0.000" asserts="3" />
+                  <test-case name="Tests.UnitTests.JsonSiteMapReaderTests.GetAllNodes_ThrowsAFileLoadException_IfFileIsEmpty" executed="True" success="True" time="0.000" asserts="0" />
+                </results>
+              </test-suite>
+              <test-suite name="SiteMapNodeTests" executed="True" success="True" time="0.020" asserts="0">
+                <results>
+                  <test-case name="Tests.UnitTests.SiteMapNodeTests.IsInRole_ReturnsFalse_IfTheSiteMapNodeDoesNotHaveTheInputRoleOnIt" executed="True" success="True" time="0.010" asserts="1" />
+                  <test-case name="Tests.UnitTests.SiteMapNodeTests.IsInRole_ReturnsFalse_WhenInputRoleIsNull" executed="True" success="True" time="0.010" asserts="1" />
+                  <test-suite name="IsInRole_ReturnsTrue_IfTheSiteMapNodeDoesNotHaveAnyRoleOnIt" executed="True" success="True" time="0.000" asserts="0">
+                    <results>
+                      <test-case name="Tests.UnitTests.SiteMapNodeTests.IsInRole_ReturnsTrue_IfTheSiteMapNodeDoesNotHaveAnyRoleOnIt(&quot; &quot;)" executed="True" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tests.UnitTests.SiteMapNodeTests.IsInRole_ReturnsTrue_IfTheSiteMapNodeDoesNotHaveAnyRoleOnIt(null)" executed="True" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tests.UnitTests.SiteMapNodeTests.IsInRole_ReturnsTrue_IfTheSiteMapNodeDoesNotHaveAnyRoleOnIt(&quot;&quot;)" executed="True" success="True" time="0.000" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-case name="Tests.UnitTests.SiteMapNodeTests.IsInRole_ReturnsTrue_IfTheSiteMapNodeHasTheInputRoleOnIt" executed="True" success="True" time="0.000" asserts="1" />
+                  <test-case name="Tests.UnitTests.SiteMapNodeTests.IsRootNode_ReturnsFalse_IfTheParentIdIsNot0" executed="True" success="True" time="0.000" asserts="1" />
+                  <test-case name="Tests.UnitTests.SiteMapNodeTests.IsRootNode_ReturnsTrue_IfTheParentIdIs0" executed="True" success="True" time="0.000" asserts="1" />
+                </results>
+              </test-suite>
+              <test-suite name="SiteMapServiceTests" executed="True" success="True" time="1.192" asserts="0">
+                <results>
+                  <test-case name="Tests.UnitTests.SiteMapServiceTests.GetNodesForRoles_GroupsTheNodesProperly" executed="True" success="True" time="1.182" asserts="3" />
+                  <test-case name="Tests.UnitTests.SiteMapServiceTests.GetNodesForRoles_ReturnsAllRolesIfAllOfThemAreRootNodes" executed="True" success="True" time="0.000" asserts="2" />
+                  <test-case name="Tests.UnitTests.SiteMapServiceTests.RawSiteMapNodes_ReturnsTheRawNodesUnchanged" executed="True" success="True" time="0.010" asserts="2" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

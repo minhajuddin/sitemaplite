@@ -27,7 +27,7 @@ namespace MvcSiteMap.Console {
                 WL("|{0}|", node.ToString());
                 if (node.Children != null && node.Children.Count() > 1) {
                     foreach (var child in node.Children) {
-                        WL("---|{0}|", child.ToString());
+                        WL("---|{0}|", child.Action.ToString());
                     }
                 }
             }
