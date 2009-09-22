@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using MvcSiteMap.Core;
+using SiteMapLite.Core;
 
 
-namespace MvcSiteMap.Console {
+namespace SiteMapLite.Console {
     class Program {
 
         static void Main(string[] args) {

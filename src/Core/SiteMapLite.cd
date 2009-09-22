@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MvcSiteMap.Core.JsonSiteMapReader" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAEAAAAAAAAAAAAAAQAAAAACAAAAAAA=</HashCode>
+      <FileName>JsonSiteMapReader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MvcSiteMap.Core.SiteMapNode">
+    <Position X="9.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAASQAAAEAAEAAEAAAAAAAAAAAAAgAAAAAAAAQ=</HashCode>
+      <FileName>SiteMapNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MvcSiteMap.Core.SiteMapService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAIAEAAAAA=</HashCode>
+      <FileName>SiteMapService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="MvcSiteMap.Core.ISiteMapReader">
+    <Position X="6.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISiteMapReader.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MvcSiteMap.Core.ISiteMapService">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>ISiteMapService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

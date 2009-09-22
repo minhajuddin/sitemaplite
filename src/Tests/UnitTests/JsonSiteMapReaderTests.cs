@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
-using MvcSiteMap.Core;
 using NUnit.Framework;
 using System.IO;
 using System.Text;
+using SiteMapLite.Core;
 
-namespace Tests.UnitTests {
+namespace SiteMapLite.Tests.UnitTests {
     [TestFixture]
     public class JsonSiteMapReaderTests {
 

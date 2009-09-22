@@ -8,8 +8,8 @@
     <ProjectGuid>{C1E83206-1968-4738-B58E-0F28B7BCDD44}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MvcSiteMap.Core</RootNamespace>
-    <AssemblyName>MvcSiteMap.Core</AssemblyName>
+    <RootNamespace>SiteMapLite.Core</RootNamespace>
+    <AssemblyName>SiteMapLite.Core</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -66,6 +66,7 @@
       <Link>sitemap.json</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="SiteMapLite.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MvcSiteMap.Core {
+namespace SiteMapLite.Core {
     public class SiteMapNode {
 
         public virtual int Id { get; set; }

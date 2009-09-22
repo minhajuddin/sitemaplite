@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 
-namespace MvcSiteMap.Core {
+namespace SiteMapLite.Core {
     public class JsonSiteMapReader : ISiteMapReader {
         protected IEnumerable<SiteMapNode> _nodes;
 
@@ -13,7 +13,7 @@ namespace MvcSiteMap.Core {
         public JsonSiteMapReader(string filePath) {
             if (!File.Exists(filePath)) {
                 throw new FileNotFoundException(string.Format("The sitemap json file {0} doesn't exist",
-                                                                 filePath));
+                                                              filePath));
             }
             FileStream stream = File.Open(filePath, FileMode.Open);
             Init(stream);

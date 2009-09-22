@@ -1,8 +1,9 @@
 ﻿using NUnit.Framework;
-using MvcSiteMap.Core;
 using System.Web.Mvc;
 using Moq;
-namespace Tests.UnitTests {
+using SiteMapLite.Core;
+
+namespace SiteMapLite.Tests.UnitTests {
     [TestFixture]
     public class HtmlHelperExtensionTests {
         [Test]

@@ -1,9 +1,9 @@
 using System.Linq;
-using MvcSiteMap.Core;
 using NUnit.Framework;
 using System.IO;
+using SiteMapLite.Core;
 
-namespace Tests.IntegrationTests {
+namespace SiteMapLite.Tests.IntegrationTests {
     [TestFixture]
     public class JsonSiteMapReaderTests {
 

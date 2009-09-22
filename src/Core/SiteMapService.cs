@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MvcSiteMap.Core {
+namespace SiteMapLite.Core {
     public class SiteMapService : ISiteMapService {
 
         public virtual IEnumerable<SiteMapNode> RawSiteMapNodes { get; private set; }

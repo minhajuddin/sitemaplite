@@ -8,8 +8,8 @@
     <ProjectGuid>{9B74C1B6-1740-4FA9-BF13-77D73748C29A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tests</RootNamespace>
-    <AssemblyName>Tests</AssemblyName>
+    <RootNamespace>SiteMapLite.Tests</RootNamespace>
+    <AssemblyName>SiteMapLite.Tests</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

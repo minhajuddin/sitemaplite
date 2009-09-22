@@ -1,7 +1,7 @@
 using NUnit.Framework;
-using MvcSiteMap.Core;
+using SiteMapLite.Core;
 
-namespace Tests.UnitTests {
+namespace SiteMapLite.Tests.UnitTests {
     [TestFixture]
     public class SiteMapNodeTests {
 

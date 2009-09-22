@@ -8,8 +8,8 @@
     <ProjectGuid>{EE324024-4A9D-4280-9E96-999BA4F8ECBD}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MvcSiteMap.Console</RootNamespace>
-    <AssemblyName>MvcSiteMap.Console</AssemblyName>
+    <RootNamespace>SiteMapLite.Console</RootNamespace>
+    <AssemblyName>SiteMapLite.Console</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

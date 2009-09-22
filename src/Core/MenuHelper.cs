@@ -1,6 +1,7 @@
 using System.Web.Mvc;
 using System.Text;
-namespace MvcSiteMap.Core {
+
+namespace SiteMapLite.Core {
     public static class MenuHelper {
 
         public static string RenderMainNav(this HtmlHelper helper) {
