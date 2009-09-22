@@ -57,7 +57,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IntegrationTests\ConfigurationTests.cs" />
     <Compile Include="IntegrationTests\JsonSiteMapReaderTests.cs" />
+    <Compile Include="UnitTests\CachedSiteMapServiceTests.cs" />
     <Compile Include="UnitTests\HtmlHelperExtensionTests.cs" />
     <Compile Include="UnitTests\JsonSiteMapReaderTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -65,9 +67,9 @@
     <Compile Include="UnitTests\SiteMapServiceTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Core\Core.csproj">
+    <ProjectReference Include="..\Core\SiteMapLite.csproj">
       <Project>{C1E83206-1968-4738-B58E-0F28B7BCDD44}</Project>
-      <Name>Core</Name>
+      <Name>SiteMapLite</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

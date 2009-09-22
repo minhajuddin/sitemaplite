@@ -11,22 +11,13 @@ namespace SiteMapLite.Core {
         }
 
         public JsonSiteMapReader(string filePath) {
-            if (File.Exists(filePath)) {
-                FileStream stream = File.Open(filePath, FileMode.Open);
-                Init(stream);
+            if (!File.Exists(filePath)) {
+                throw new FileNotFoundException(
+                    string.Format("The sitemap json file {0} doesn't exist, Current Directory is {1}",
+                                  filePath, Directory.GetCurrentDirectory()));
             }
-
-            //TODO: !!Remove this hack, this should be configured in the Global.asax
-            filePath = Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, filePath);
-
-            if (File.Exists(filePath)) {
-                FileStream stream = File.Open(filePath, FileMode.Open);
-                Init(stream);
-            } else {
-                throw new FileNotFoundException(string.Format("The sitemap json file {0} doesn't exist, Current Directory is {1}",
-                    filePath, Directory.GetCurrentDirectory()));
-            }
-
+            FileStream stream = File.Open(filePath, FileMode.Open);
+            Init(stream);
         }
 
         public JsonSiteMapReader(Stream stream) {

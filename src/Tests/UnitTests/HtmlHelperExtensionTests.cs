@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using System.Web.Mvc;
 using Moq;
-using SiteMapLite.Core;
+using SiteMapLite.Html;
 
 namespace SiteMapLite.Tests.UnitTests {
     [TestFixture]

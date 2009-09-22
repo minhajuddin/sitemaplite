@@ -8,8 +8,8 @@
     <ProjectGuid>{C1E83206-1968-4738-B58E-0F28B7BCDD44}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SiteMapLite.Core</RootNamespace>
-    <AssemblyName>SiteMapLite.Core</AssemblyName>
+    <RootNamespace>SiteMapLite</RootNamespace>
+    <AssemblyName>SiteMapLite</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -53,12 +53,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ISiteMapReader.cs" />
-    <Compile Include="ISiteMapService.cs" />
-    <Compile Include="JsonSiteMapReader.cs" />
-    <Compile Include="SiteMapNode.cs" />
-    <Compile Include="SiteMapService.cs" />
-    <Compile Include="MenuHelper.cs" />
+    <Compile Include="Configuration.cs" />
+    <Compile Include="Core\CachedSiteMapService.cs" />
+    <Compile Include="Core\ISiteMapReader.cs" />
+    <Compile Include="Core\ISiteMapService.cs" />
+    <Compile Include="Core\JsonSiteMapReader.cs" />
+    <Compile Include="Core\SiteMapNode.cs" />
+    <Compile Include="Core\SiteMapService.cs" />
+    <Compile Include="Html\MenuHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

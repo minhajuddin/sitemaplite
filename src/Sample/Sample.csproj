@@ -95,9 +95,9 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Core\Core.csproj">
+    <ProjectReference Include="..\Core\SiteMapLite.csproj">
       <Project>{C1E83206-1968-4738-B58E-0F28B7BCDD44}</Project>
-      <Name>Core</Name>
+      <Name>SiteMapLite</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

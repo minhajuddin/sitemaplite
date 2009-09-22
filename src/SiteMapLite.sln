@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{C1E83206-1968-4738-B58E-0F28B7BCDD44}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiteMapLite", "Core\SiteMapLite.csproj", "{C1E83206-1968-4738-B58E-0F28B7BCDD44}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{9B74C1B6-1740-4FA9-BF13-77D73748C29A}"
 EndProject

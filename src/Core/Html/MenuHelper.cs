@@ -1,19 +1,19 @@
-using System;
-using System.Collections;
 using System.ComponentModel;
 using System.Web.Mvc;
 using System.Text;
+using SiteMapLite.Core;
 
-namespace SiteMapLite.Core {
+namespace SiteMapLite.Html {
     public static class MenuHelper {
+
+
         public static string RenderMainNav(this HtmlHelper helper) {
             return RenderMainNav(helper, null);
         }
 
         public static string RenderMainNav(this HtmlHelper helper, object htmlAttributes) {
-            ISiteMapReader reader = new JsonSiteMapReader();
-            ISiteMapService service = new SiteMapService(reader);
-            var nodes = service.GetNodesForRole("Administrator");
+
+            var nodes = CachedSiteMapService.Service.GetNodesForRole("Administrator");
             StringBuilder sb = new StringBuilder();
 
             sb.Append("<ul ");
