@@ -1,0 +1,7 @@
+﻿Home:home#index
+  Faqs: home#faqs
+  Privacy: home#privacy
+  
+UserManagement:usermanagement#index
+  Add: usermanagement#add
+  Search: usermanagement#search

@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="IntegrationTests\ConfigurationTests.cs" />
     <Compile Include="IntegrationTests\JsonSiteMapReaderTests.cs" />
+    <Compile Include="IntegrationTests\YamlSiteMapReaderTests.cs" />
     <Compile Include="UnitTests\CachedSiteMapServiceTests.cs" />
     <Compile Include="UnitTests\HtmlHelperExtensionTests.cs" />
     <Compile Include="UnitTests\JsonSiteMapReaderTests.cs" />
@@ -73,6 +74,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="sitemap.yaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="sitemap.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

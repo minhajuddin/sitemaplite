@@ -60,6 +60,7 @@
     <Compile Include="Core\JsonSiteMapReader.cs" />
     <Compile Include="Core\SiteMapNode.cs" />
     <Compile Include="Core\SiteMapService.cs" />
+    <Compile Include="Core\YamlSiteMapReader.cs" />
     <Compile Include="Html\MenuHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
