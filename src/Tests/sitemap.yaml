@@ -1,7 +1,10 @@
-﻿Home:home#index
+﻿Home:home#index>Pro
   About: home#about
   Privacy: home#privacy
   
-UserManagement:usermanagement#index
+UserManagement:usermanagement#index>Anon
   Add: usermanagement#add
   Search: usermanagement#search
+  
+Products:products#index>Pro
+  UserManagement:usermanagement#index>Anon

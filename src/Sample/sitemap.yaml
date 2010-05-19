@@ -1,7 +1,0 @@
-﻿Home:home#index
-  Faqs: home#about
-  Privacy: home#privacy
-  
-UserManagement:usermanagement#index
-  Add: usermanagement#add
-  Search: usermanagement#search

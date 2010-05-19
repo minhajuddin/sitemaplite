@@ -12,7 +12,7 @@ namespace SiteMapLite {
             string filePath = filename;
 
             if ( !File.Exists( filePath ) ) {
-                filePath = Path.Combine( System.AppDomain.CurrentDomain.BaseDirectory, filename );
+                filePath = Path.Combine( Path.Combine( System.AppDomain.CurrentDomain.BaseDirectory, "bin" ), filename );
             }
             if ( !File.Exists( filePath ) ) {
                 filePath = Path.Combine( Directory.GetCurrentDirectory(), filename );

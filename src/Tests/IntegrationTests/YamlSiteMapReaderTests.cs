@@ -14,8 +14,9 @@ namespace SiteMapLite.Tests.IntegrationTests {
             var reader = new YamlSiteMapReader();
             var nodes = reader.GetAllNodes();
             Assert.IsNotNull( nodes );
-            Assert.AreEqual( 6, nodes.Count() );
+            Assert.AreEqual( 8, nodes.Count() );
         }
+
         [Test]
         public void CanReadNodesFromACustomYamlFile() {
             var reader = new YamlSiteMapReader( "sitemap.yaml" );
@@ -50,6 +51,17 @@ namespace SiteMapLite.Tests.IntegrationTests {
 
             Assert.AreEqual( 0, nodes.First().ParentId );
             Assert.AreEqual( 0, nodes.Single( x => x.Id == 4 ).ParentId );
+        }
+
+        [Test]
+        public void RolesAreParsedProperly() {
+            var reader = new YamlSiteMapReader();
+            var nodes = reader.GetAllNodes();
+
+            Assert.AreEqual( "Pro", nodes.First().Role );
+            Assert.AreEqual( "Pro", nodes.Single( x => x.Id == 3 ).Role );
+            Assert.AreEqual( "Anonymous", nodes.Single( x => x.Id == 7 ).Role );
+            Assert.AreEqual( "Anon", nodes.Single( x => x.Id == 8 ).Role );
         }
 
     }
