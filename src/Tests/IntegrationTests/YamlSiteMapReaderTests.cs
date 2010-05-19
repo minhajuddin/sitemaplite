@@ -27,7 +27,7 @@ namespace SiteMapLite.Tests.IntegrationTests {
             Assert.AreEqual( "index", home.Action );
             Assert.AreEqual( 1, home.Id );
 
-            var second = nodes.Single( x => x.Title == "Faqs" );
+            var second = nodes.Single( x => x.Title == "About" );
             Assert.AreEqual( 2, second.Id );
         }
 
@@ -36,11 +36,21 @@ namespace SiteMapLite.Tests.IntegrationTests {
             var reader = new YamlSiteMapReader();
             var nodes = reader.GetAllNodes();
 
-            var node = nodes.Single( x => x.Title == "Faqs" );
+            var node = nodes.Single( x => x.Title == "About" );
             Assert.AreEqual( 1, node.ParentId );
 
             node = nodes.Single( x => x.Title == "Add" );
             Assert.AreEqual( 4, node.ParentId );
         }
+
+        [Test]
+        public void ParentInfoIsPopulatedProperlyForParents() {
+            var reader = new YamlSiteMapReader();
+            var nodes = reader.GetAllNodes();
+
+            Assert.AreEqual( 0, nodes.First().ParentId );
+            Assert.AreEqual( 0, nodes.Single( x => x.Id == 4 ).ParentId );
+        }
+
     }
 }

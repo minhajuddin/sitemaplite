@@ -32,7 +32,7 @@ namespace SiteMapLite.Html {
         private static void AppendHtmlAttributes( StringBuilder sb, object htmlAttributes ) {
             PropertyDescriptorCollection properties = TypeDescriptor.GetProperties( htmlAttributes );
             foreach ( PropertyDescriptor property in properties ) {
-                sb.AppendFormat( " {0}='{1}' ", property.Name.Trim( '@' )/* Remove the @ if the attribute is @class */, property.GetValue( htmlAttributes ) );
+                sb.AppendFormat( " {0}='{1}' ", property.Name, property.GetValue( htmlAttributes ) );
             }
         }
     }

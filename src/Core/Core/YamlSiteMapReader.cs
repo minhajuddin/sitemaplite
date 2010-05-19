@@ -25,11 +25,12 @@ namespace SiteMapLite.Core {
             var currentParentId = 0;
             while ( !reader.EndOfStream ) {
                 var line = reader.ReadLine();
-                if ( IsParent( line ) ) {
+                var isParent = IsParent( line );
+                if ( isParent ) {
                     currentParentId = id;
                 }
                 if ( line.Trim().Length == 0 ) continue;
-                nodes.Add( ParseSiteMapNode( line, id++, currentParentId ) );
+                nodes.Add( ParseSiteMapNode( line, id++, isParent ? 0 : currentParentId ) );
             }
 
             _nodes = nodes;
